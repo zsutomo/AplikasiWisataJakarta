@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/truenull/Documents/My Project/Android Studio/AplikasiWisataJakarta/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="13144a6c03c3f1d28ed95c35ae8b42d331d2b811">
+        <dex dex="/home/truenull/Documents/My Project/Android Studio/AplikasiWisataJakarta/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1bccac867ddd8a7428c022e61abefe667cbd77fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/truenull/Documents/My Project/Android Studio/AplikasiWisataJakarta/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/truenull/Documents/My Project/Android Studio/AplikasiWisataJakarta/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_23a932788046c9dd7539f9012b471d89d859beed/classes.dex" />
+    </item>
+
+</items>

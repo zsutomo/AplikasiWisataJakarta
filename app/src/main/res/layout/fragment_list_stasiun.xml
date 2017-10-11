@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tugasakhir.zulfallah.aplikasiwisatajakarta.ListStasiun">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_stasiun" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:padding="5dp" />
+
+</RelativeLayout>
