@@ -6,7 +6,7 @@ package com.tugasakhir.zulfallah.aplikasiwisatajakarta;
 
 public class ModelStasiun {
     String nama;
-    String jarak;
+    double jarak;
     String waktu;
     int ImageResourceID;
     double latitude;
@@ -28,11 +28,11 @@ public class ModelStasiun {
         this.nama = nama;
     }
 
-    public String getJarak() {
+    public double getJarak() {
         return jarak;
     }
 
-    public void setJarak(String jarak) {
+    public void setJarak(double jarak) {
         this.jarak = jarak;
     }
 

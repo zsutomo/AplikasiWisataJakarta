@@ -37,6 +37,9 @@ public class ListKendaraan extends AppCompatActivity {
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+                Bundle bundle = getIntent().getExtras();
+                Double latitude_lokasi = bundle.getDouble("Latitude_tujuan");
+                Double longitude_lokasi = bundle.getDouble("Longitude_tujuan");
                 viewPager.setCurrentItem(tab.getPosition());
             }
 

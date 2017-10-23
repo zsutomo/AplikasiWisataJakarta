@@ -1,11 +1,13 @@
 package com.tugasakhir.zulfallah.aplikasiwisatajakarta;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -107,6 +109,10 @@ public class Wisata extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(getActivity(), ListKendaraan.class);
+
+                    intent.putExtra("Latitude_tujuan", list.get(position).getLatitude());
+                    intent.putExtra("Longitude_tujuan", list.get(position).getLongitude());
+
                     startActivity(intent);
                 }
             });
@@ -156,5 +162,21 @@ public class Wisata extends Fragment {
             item.setImageResourceID(Images[i]);
             listItems.add(item);
         }
+    }
+    private void showGPSDisabledAlertToUser(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Wisata.this.getContext());
+        alertDialogBuilder.setMessage("GPS is disabled in your device. Would you like to enable it?")
+                .setCancelable(false)
+                .setPositiveButton("Goto Settings Page To Enable GPS",
+                        new DialogInterface.OnClickListener(){
+                            public void onClick(DialogInterface dialog, int id){
+                                Intent callGPSSettingIntent = new Intent(
+                                        android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                                startActivity(callGPSSettingIntent);
+                            }
+                        });
+
+        AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
     }
 }
