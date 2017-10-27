@@ -6,11 +6,20 @@ package com.tugasakhir.zulfallah.aplikasiwisatajakarta;
 
 public class ModelStasiun {
     String nama;
+    String nama_Akses_kendaraan;
     double jarak;
     String waktu;
     int ImageResourceID;
     double latitude;
     double longitude;
+
+    public String getNama_Akses_kendaraan() {
+        return nama_Akses_kendaraan;
+    }
+
+    public void setNama_Akses_kendaraan(String nama_Akses_kendaraan) {
+        this.nama_Akses_kendaraan = nama_Akses_kendaraan;
+    }
 
     public String getWaktu() {
         return waktu;

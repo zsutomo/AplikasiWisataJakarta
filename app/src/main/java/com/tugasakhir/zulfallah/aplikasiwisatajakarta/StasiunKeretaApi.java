@@ -304,6 +304,7 @@ public class StasiunKeretaApi extends Fragment {
             holder.namaStasiun.setText(list.get(position).getNama());
             holder.jarakkewisata.setText("Jarak ke Wisata : " + ((int) list.get(position).getJarak()+" km "));
             holder.waktukewisata.setText("Waktu Tempu ke Wisata : " + list.get(position).getWaktu()+" menit ");
+            holder.saran_akses.setText("Disarankan Menggunakan Kendaraan : " + list.get(position).getNama_Akses_kendaraan());
             holder.coverImage.setTag(list.get(position).getImageResourceID());
 
 
@@ -313,6 +314,7 @@ public class StasiunKeretaApi extends Fragment {
             TextView namaStasiun;
             TextView jarakkewisata;
             TextView waktukewisata;
+            TextView saran_akses;
             ImageView coverImage;
             CardView cardView;
 
@@ -324,6 +326,7 @@ public class StasiunKeretaApi extends Fragment {
                 namaStasiun =  v.findViewById(R.id.namaStasiun_halte);
                 jarakkewisata =  v.findViewById(R.id.jarak_tempuh);
                 waktukewisata = v.findViewById(R.id.waktu_ke_wisata);
+                saran_akses = v.findViewById(R.id.saran_akses);
                 cardView = v.findViewById(R.id.card_view);
             }
         }
