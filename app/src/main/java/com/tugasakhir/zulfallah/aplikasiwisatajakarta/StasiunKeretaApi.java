@@ -27,9 +27,7 @@ public class StasiunKeretaApi extends Fragment {
 
     ArrayList<ModelStasiun> listItems = new ArrayList<>();
     RecyclerView mRecyclerView;
-    String namaStasiun[] = {"Stasiun 1", "Stasiun 2","Stasiun 3", "Stasiun 4", "Stasiun 5"};
-    String jarakkewisata[] = {"2 km", "6 km", "8 km", "10 km", "15 km"};
-    String waktukewisata[] = {"3 menit", "20 menit", "30 menit", "45 menit", "1 Jam"};
+
     String[] nama_stasiun = {
             "Stasiun Ancol",
             "Stasiun Angke",
@@ -337,7 +335,6 @@ public class StasiunKeretaApi extends Fragment {
     }
 
     private void initializeList() {
-
         listItems.clear();
         Bundle bundle = this.getActivity().getIntent().getExtras();
         Double latitude_lokasi = bundle.getDouble("Latitude_tujuan");
