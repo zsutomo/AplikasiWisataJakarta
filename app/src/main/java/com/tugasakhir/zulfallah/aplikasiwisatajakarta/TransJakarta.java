@@ -228,6 +228,11 @@ public class TransJakarta extends Fragment {
 
             item.setJarak(distance_all);
             item.setWaktu(String.valueOf((int)waktu_per_menit));
+            if(distance_all>3.0){
+                item.setNama_Akses_kendaraan("Ojek Online");
+            }else{
+                item.setNama_Akses_kendaraan("Berjalan Kaki");
+            }
             listItems.add(item);
         }
 
